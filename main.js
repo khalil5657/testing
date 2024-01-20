@@ -6,7 +6,7 @@ while (turn < 5){
     startGame();
 
 }
-alert(`Player score: ${playerscore} Computer score ${compscore}`);
+alert(`Player score: ${playerscore} Computer score ${compscore} WOHOO`);
 function startGame(){
     let playerChoice = prompt("choose ").toLowerCase();
     let compChoice = lista[Math.floor(Math.random()*lista.length)];
