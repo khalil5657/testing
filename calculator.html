@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="screen">
+            <p class="result" style="width: 90%;"></p>
+            <p class="current" style="width: 90%;"></p>
+            
+        </div>
+        <div class="delete">
+            <div style="display: flex; align-items: center; justify-content: center;"><button style="flex: 1; background-color: lightcoral;" onclick="clearIt()">Clear</button></div>
+            <div style="display: flex; align-items: center; justify-content: center;"><button style="flex: 1; background-color: lightblue;" onclick="deleteIt()">Delete</button></div>
+        </div>
+        <div class="nums">
+            <button onclick="writeNumbers(1)">1</button>
+            <button onclick="writeNumbers(2)">2</button>
+            <button onclick="writeNumbers('3')">3</button>
+            <button onclick="operator('/')">/</button>
+            <button onclick="writeNumbers(4)">4</button>
+            <button onclick="writeNumbers(5)">5</button>
+            <button onclick="writeNumbers(6)">6</button>
+            <button onclick="operator('*')">*</button>
+            <button onclick="writeNumbers(7)">7</button>
+            <button onclick="writeNumbers(8)">8</button>
+            <button onclick="writeNumbers(9)">9</button>
+            <button onclick="operator('-')">-</button>
+            <button class="dot" onclick="writeNumbers('.')">.</button>
+            <button onclick="writeNumbers(0)">0</button>
+            <button onclick="equals()">=</button>
+            <button onclick="operator('+')">+</button>
+        </div>
+    </div>
+    <div>
+        <svg viewBox=" -150 -150 300 300" style="border: 1px solid black;" height="300" width="300"> 
+            <rect
+                x="0" y="0"
+                width="300px" height="300px"
+                fill="red" stroke="green"
+                />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="100 -960 960 960" width="100px" style="border: 1px solid red;">
+            <g class="example">
+                
+                <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/>
+            </g>
+        </svg>
+        
+    </div>
+    <!-- <table >
+        <thead>
+            <tr style="padding-bottom: 20px;" class="roro">
+                <th style="width: 150px; " align="left" scope="col">PRODUCT</th>
+                <th scope="col">QTY</th>
+                <th scope="col">PRICE</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr >
+                <td style="padding-bottom: 10px; ;">Drink (large)</td>
+                <td align="right">1</td>
+                <td align="right">2.90</td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px;">Fries (small)</td>
+                <td align="right">2</td>
+                <td align="right">5.00</td>
+            </tr>
+            <tr>
+                <td>Burger (no pickel)</td>
+                <td align="right">2</td>
+                <td align="right">7</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td align="right" colspan="2">Total</td>
+                <td align="right">14.90</td>
+            </tr>
+        </tfoot>
+        
+    </table> -->
+    <table>
+        <thead>
+        <tr>
+            <th>SEMESTER 3</th>
+            <th >10.0667</th>
+            <th ></th>
+            <th >VALIDE</th>
+            <th >2</th>
+            <th >2022/2023</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="unique">
+            <th>MODULE: RESPONSABILITE CIVILE</th>
+            <td class="ko">10</td>
+            <td class="do"></td>
+            <td class="so">V</td>
+            <td class="ro">1</td>
+            <td>2022/2023</td>
+        </tr>
+        <tr>
+            <th>MODULE: DROIT DE LA FAMILE</th>
+            <td>12</td>
+            <td></td>
+            <td>V</td>
+            <td>2</td>
+            <td>2022/2023</td>
+        </tr>
+        <tr>
+            <th>MODULE: DROIT BUDGETAIRE</th>
+            <td>6</td>
+            <td></td>
+            <td>AC</td>
+            <td>2</td>
+            <td>2022/2023</td>
+        </tr>
+        <tr>
+            <th>MODULE: ACTION ADMINISTRATIVE</th>
+            <td>12</td>
+            <td></td>
+            <td>V</td>
+            <td>2</td>
+            <td>2022/2023</td>
+        </tr>
+        <tr>
+            <th>MODULE: SYSTEMES CONSTITUTIONNELS COMPARE</th>
+            <td>12</td>
+            <td></td>
+            <td>V</td>
+            <td>2</td>
+            <td>2022/2023</td>
+        </tr>
+        <tr>
+            <th>MODULE: DROIT SOCIAL</th>
+            <td>12</td>
+            <td></td>
+            <td>V</td>
+            <td>2</td>
+            <td>2022/2023</td>
+        </tr>
+    </tbody>
+    </table>
+    
+<script src="calculator.js"></script>
+</body>
+</html>
